@@ -38,3 +38,8 @@ vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 vim.api.nvim_set_hl(0, "VertSplit", { bg = "none" })
 vim.api.nvim_set_hl(0, "NormalNC", { bg = "none" })
+
+-- Hybrid line numbers
+vim.wo.number = true
+vim.wo.relativenumber = true
+
