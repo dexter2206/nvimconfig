@@ -6,7 +6,7 @@ return {
         "nvim-tree/nvim-web-devicons",
     },
     config = function()
-        require("nvim-tree").setup()
+        require("nvim-tree").setup({ actions = { change_dir = { global = true }}})
         local nvimTreeFocusOrToggle = function ()
      	    local nvimTree=require("nvim-tree.api")
         	local currentBuf = vim.api.nvim_get_current_buf()
