@@ -32,7 +32,7 @@ return {
                 run = "r",
                 mark = "<TAB>",
                 run_marked = "R",
-                stop = "k"
+                stop = "x"
             }
         }
     })
