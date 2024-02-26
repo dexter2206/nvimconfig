@@ -19,10 +19,16 @@ return {
         require("mason-lspconfig").setup({
             ensure_installed = {
                 "pyright",
-                "rust_analyzer"
+                "rust_analyzer",
+                "ltex",
+                "clangd",
+                "elixirls"
             },
             handlers = {
-                lsp_zero.default_setup
+                lsp_zero.default_setup,
+                ltex = function()
+                    require("lspconfig").ltex.setup({ filetypes = {"markdown", "text", "latex"}})
+                end
             }
         })
     end
