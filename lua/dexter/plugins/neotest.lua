@@ -41,6 +41,9 @@ return {
       "<leader>ts",
       neotest.summary.toggle
     )
+    vim.keymap.set("n", "<leader>to", function()
+				require("neotest").output.open({ enter = true, auto_close = true })
+			end)
     vim.api.nvim_set_hl(0, "NeotestPassed", { fg = vim.api.nvim_get_hl(0, { name = "String" }).fg })
 end
 }
