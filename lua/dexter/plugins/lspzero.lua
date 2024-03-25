@@ -22,7 +22,8 @@ return {
                 "rust_analyzer",
                 "ltex",
                 "clangd",
-                "elixirls"
+                "elixirls",
+                "yamlls"
             },
             handlers = {
                 lsp_zero.default_setup,
