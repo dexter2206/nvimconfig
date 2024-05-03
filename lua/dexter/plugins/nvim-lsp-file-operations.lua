@@ -5,8 +5,9 @@ return {
       "nvim-lua/plenary.nvim",
       "nvim-tree/nvim-tree.lua",
     },
+    lazy = false,
     config = function()
-      require("lsp-file-operations").setup()
+      require("lsp-file-operations").setup({debug=true})
     end,
   },
 }

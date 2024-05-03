@@ -47,3 +47,7 @@ vim.api.nvim_set_hl(0, "NvimTreeNormal", { bg = "none" })
 vim.wo.number = true
 vim.wo.relativenumber = true
 
+
+vim.opt.spellfile=vim.fn.expand("~/.config/nvim/spell/en.utf-8.add")
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
